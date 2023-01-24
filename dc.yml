@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx
+    ports:
+      - "8000:8000"
+    deploy:
+      replicas: 2
+  redis:
+    image: redis:alpine
